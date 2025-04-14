@@ -74,8 +74,8 @@ function Social({ link }) {
       <a
         href={
           link.socialName === "email"
-            ? `mailto:${link.socialName}`
-            : link.socialName
+            ? `mailto:${link.href}`
+            : link.href
         }
         target="__blank"
         className="social-icon"
