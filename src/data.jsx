@@ -45,7 +45,7 @@ export const socials = [
   {
     id: nanoid(),
     socialName: "website",
-    href: "https://raffy-ramos-port.netlify.app/",
+    href: "https://raffy-ramos-port.netlify.app",
     icon: <FaLink />,
     color: "#339933",
   },
