@@ -4,6 +4,7 @@ import { AiFillTikTok } from "react-icons/ai";
 import { AiFillWechatWork } from "react-icons/ai";
 import { FaViber } from "react-icons/fa6";
 import { TbBrandGmail } from "react-icons/tb";
+import { FaLink } from "react-icons/fa";
 
 export const socials = [
   {
@@ -43,9 +44,9 @@ export const socials = [
   },
   {
     id: nanoid(),
-    socialName: "wechat",
-    href: "#",
-    icon: <AiFillWechatWork />,
-    color: "#09B83E",
+    socialName: "website",
+    href: "https://raffy-ramos-port.netlify.app/",
+    icon: <FaLink />,
+    color: "#000",
   },
 ];
