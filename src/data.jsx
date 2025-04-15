@@ -17,14 +17,14 @@ export const socials = [
   {
     id: nanoid(),
     socialName: "instagram",
-    href: "#",
+    href: "https://www.instagram.com/raffy14.io",
     icon: <FaInstagramSquare />,
     color: "#E1306C",
   },
   {
     id: nanoid(),
     socialName: "tiktok",
-    href: "#",
+    href: "https://www.tiktok.com/@raffy14.io",
     icon: <AiFillTikTok />,
     color: "#000",
   },
