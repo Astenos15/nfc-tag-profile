@@ -1,27 +1,33 @@
 export default function Social({ link, index, ref, inView }) {
   return (
-    <li ref={ref} className="social-item">
+    <li className="social-item">
       <a
+        ref={ref}
         href={link.socialName === "email" ? `mailto:${link.href}` : link.href}
         target="__blank"
-        className={
-          index % 2 === 0 && inView
-            ? "social-icon animate delayShortest"
-            : "social-icon animate delayShort"
-        }
         style={{ color: link.color }}
       >
-        {link.icon}
+        <span
+          className={
+            index % 2 === 0 && inView
+              ? "social-icon animate delayShortest"
+              : "social-icon animate delayShort"
+          }
+        >
+          {link.icon}
+        </span>
       </a>
-      <span
-        className={
-          index % 2 === 0 && inView
-            ? "social-name animate delayShortest"
-            : "social-name animate delayShort"
-        }
-      >
-        {link.socialName}
-      </span>
+      <p ref={ref}>
+        <span
+          className={
+            index % 2 === 0 && inView
+              ? "social-name animate delayShortest"
+              : "social-name animate delayShort"
+          }
+        >
+          {link.socialName}
+        </span>
+      </p>
     </li>
   );
 }
