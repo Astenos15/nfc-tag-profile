@@ -31,7 +31,7 @@ export const socials = [
   {
     id: nanoid(),
     socialName: "email",
-    href: "#",
+    href: "raffy.ramos.14.portfolio@gmail.com",
     icon: <TbBrandGmail />,
     color: "#BB001B",
   },
