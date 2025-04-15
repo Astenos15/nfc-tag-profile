@@ -1,6 +1,7 @@
-export default function Footer({ ref, inView }) {
+import { useInView } from "react-intersection-observer";
+export default function Footer() {
+  const { ref, inView } = useInView();
   const date = new Date();
-  console.log(inView);
 
   return (
     <footer ref={ref} className="footer">

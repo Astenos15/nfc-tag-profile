@@ -5,21 +5,19 @@ import ProfilePicture from "./components/ProfilePicture";
 import ProfileInformation from "./components/ProfileInformation";
 import SocialList from "./components/SocialList";
 import Footer from "./components/Footer";
-import { useInView } from "react-intersection-observer";
 
 function App() {
-  const { ref, inView } = useInView();
   return (
     <div className="app">
       <Navbar />
       <About>
         <Container className="custom-grid">
-          <ProfilePicture ref={ref} inView={inView} />
-          <ProfileInformation ref={ref} inView={inView} />
+          <ProfilePicture />
+          <ProfileInformation />
         </Container>
-        <SocialList ref={ref} inView={inView} />
+        <SocialList />
       </About>
-      <Footer ref={ref} inView={inView} />
+      <Footer />
     </div>
   );
 }

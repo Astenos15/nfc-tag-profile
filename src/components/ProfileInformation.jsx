@@ -1,6 +1,9 @@
-export default function ProfileInformation({ ref, inView }) {
+import { useInView } from "react-intersection-observer";
+export default function ProfileInformation() {
   const date = new Date().getFullYear();
   const age = date - 1990;
+  const { ref, inView } = useInView();
+
   return (
     <div ref={ref} className="grid-item center pr-sm">
       <h3 className={`mb-xs ${inView ? "animate delayShort" : ""}`}>

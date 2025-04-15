@@ -1,4 +1,7 @@
-export default function Social({ link, index, ref, inView }) {
+import { useInView } from "react-intersection-observer";
+
+export default function Social({ link, index }) {
+  const { ref, inView } = useInView();
   return (
     <li className="social-item">
       <a
@@ -10,7 +13,7 @@ export default function Social({ link, index, ref, inView }) {
         <span
           className={
             index % 2 === 0 && inView
-              ? "social-icon animate delayShortest"
+              ? "social-icon animate delayLong"
               : "social-icon animate delayShort"
           }
         >
@@ -21,7 +24,7 @@ export default function Social({ link, index, ref, inView }) {
         <span
           className={
             index % 2 === 0 && inView
-              ? "social-name animate delayShortest"
+              ? "social-name animate delayLong"
               : "social-name animate delayShort"
           }
         >
