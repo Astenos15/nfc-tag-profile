@@ -1,21 +1,19 @@
 import { useInView } from "react-intersection-observer";
+import { userName, birthYear, aboutMe } from "../data";
 export default function ProfileInformation() {
   const date = new Date().getFullYear();
-  const age = date - 1990;
+  const age = date - birthYear;
   const { ref, inView } = useInView();
 
   return (
     <div ref={ref} className="grid-item center pr-sm">
-      <h3 className={`mb-xs ${inView ? "animate delayShort" : ""}`}>
-        Raffy,{" "}
+      <h3 className={`mb-xs capitalize ${inView ? "animate delayShort" : ""}`}>
+        {userName},
         <span className={`age ${inView ? "animate delayShort" : ""}`}>
           {age}
         </span>
       </h3>
-      <p className={inView ? "animate delayShort" : ""}>
-        Hello I'm Raffy Front-end developer,copywriter, and entrepreneur.Let's
-        build something amazing together!
-      </p>
+      <p className={inView ? "animate delayShort" : ""}>{aboutMe}</p>
     </div>
   );
 }

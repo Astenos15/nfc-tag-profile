@@ -1,11 +1,25 @@
+// Dont touch code below
 import { nanoid } from "nanoid";
 import { FaFacebookSquare, FaInstagramSquare } from "react-icons/fa";
 import { AiFillTikTok } from "react-icons/ai";
-import { AiFillWechatWork } from "react-icons/ai";
 import { FaViber } from "react-icons/fa6";
 import { TbBrandGmail } from "react-icons/tb";
 import { FaLink } from "react-icons/fa";
+// Dont touch code above
 
+import picture from "./assets/img/profile.png"; // Only change  the file format "./assets/img/profile.{format}"
+
+export const photo = picture; // Do not touch
+
+export const userName = "raffy"; // Type your desired username between " "
+
+export const birthYear = 1990; // Type your birthyear here
+
+// Tell something about yourself.Type text between " "
+export const aboutMe =
+  "Hello I'm Raffy Front-end developer,copywriter, and entrepreneur.Let's build something amazing together!";
+
+// Copy and paste your social/contact link and paste in -- href: "paste here" --
 export const socials = [
   {
     id: nanoid(),
@@ -50,3 +64,5 @@ export const socials = [
     color: "#339933",
   },
 ];
+
+export const footerText = "Let's have a coffee";
