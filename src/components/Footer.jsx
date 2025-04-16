@@ -6,7 +6,7 @@ export default function Footer() {
 
   return (
     <footer ref={ref} className="footer">
-      <h1 className={inView ? "animate delayShort " : ""}>
+      <h1 className={inView ? "animate delayShort " : "hidden"}>
         {footerText} @{date.getFullYear()}
       </h1>
     </footer>

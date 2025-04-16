@@ -31,6 +31,9 @@ body {
   grid-template-columns: repeat(3, 1fr);
 }
 /* utilities */
+.hidden {
+  opacity: 0;
+}
 .center {
   align-self: center;
 }
@@ -76,7 +79,7 @@ body {
   position: absolute;
   z-index: 1000;
 
-  animation: fastFadeIn 1s 1.5s linear, spinner 3s infinite linear !important;
+  animation: fastFadeIn 1s 1s linear, spinner 3s infinite linear !important;
   animation-fill-mode: backwards !important;
 }
 
@@ -252,7 +255,7 @@ body {
   animation-fill-mode: backwards !important;
 }
 .photoAnimate {
-  animation: fastFadeIn 1s 1s linear !important;
+  animation: fastFadeIn 1s 0.5s linear !important;
   animation-fill-mode: backwards !important;
 }
 

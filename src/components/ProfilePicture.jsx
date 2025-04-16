@@ -9,7 +9,7 @@ export default function ProfilePicture() {
       {inView && <Spinner />}
 
       <img
-        className={inView ? "profile-pic photoAnimate" : "profile-pic"}
+        className={inView ? "profile-pic photoAnimate" : "profile-pic hidden"}
         src={photo}
         alt="profile photo"
       />
