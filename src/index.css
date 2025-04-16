@@ -76,7 +76,7 @@ body {
   position: absolute;
   z-index: 1000;
 
-  animation: fastFadeIn 1s 1s linear, spinner 3s infinite linear !important;
+  animation: fastFadeIn 1s 1.5s linear, spinner 3s infinite linear !important;
   animation-fill-mode: backwards !important;
 }
 
@@ -85,6 +85,15 @@ body {
   width: 20rem;
   height: 20rem;
   position: relative;
+}
+
+.filler {
+  display: inline-block;
+  border-radius: 100%;
+  width: 20rem;
+  height: 20rem;
+  background-color: #fff;
+  position: absolute;
 }
 
 .grid-item h3 {
@@ -232,6 +241,10 @@ body {
 
 .animate {
   animation: fadeIn 1s !important;
+  animation-fill-mode: backwards !important;
+}
+.photoAnimate {
+  animation: fastFadeIn 1s 1.9s !important;
   animation-fill-mode: backwards !important;
 }
 
