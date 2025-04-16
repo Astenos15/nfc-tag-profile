@@ -1,4 +1,5 @@
 import { useInView } from "react-intersection-observer";
+import Highlight from "./Highlight";
 
 export default function Social({ link, index }) {
   const { ref, inView } = useInView();
@@ -22,6 +23,7 @@ export default function Social({ link, index }) {
           }
         >
           {link.socialName}
+          <Highlight color={link.color} />
         </span>
       </p>
     </li>
