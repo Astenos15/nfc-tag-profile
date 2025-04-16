@@ -87,15 +87,6 @@ body {
   position: relative;
 }
 
-.filler {
-  display: inline-block;
-  border-radius: 100%;
-  width: 20rem;
-  height: 20rem;
-  background-color: #fff;
-  position: absolute;
-}
-
 .grid-item h3 {
   font-size: 4.4rem;
   letter-spacing: 1.2px;
@@ -192,9 +183,26 @@ body {
 @keyframes fastFadeIn {
   0% {
     opacity: 0;
+    filter: brightness(0%);
+  }
+  50% {
+    opacity: 1;
+    filter: brightness(5%);
+  }
+  60% {
+    filter: brightness(10%);
+  }
+  70% {
+    filter: brightness(20%);
+  }
+  80% {
+    filter: brightness(30%);
+  }
+  80% {
+    filter: brightness(50%);
   }
   100% {
-    opacity: 1;
+    filter: brightness(100%);
   }
 }
 @keyframes spinner {
@@ -244,7 +252,7 @@ body {
   animation-fill-mode: backwards !important;
 }
 .photoAnimate {
-  animation: fastFadeIn 1s 1.9s !important;
+  animation: fastFadeIn 1s 1s linear !important;
   animation-fill-mode: backwards !important;
 }
 

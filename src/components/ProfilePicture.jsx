@@ -7,7 +7,6 @@ export default function ProfilePicture() {
   return (
     <div ref={ref} className="grid-item center pl-sm">
       {inView && <Spinner />}
-      {inView && <div className="filler animate delayShort">&nbsp;</div>}
 
       <img
         className={inView && "profile-pic photoAnimate"}
