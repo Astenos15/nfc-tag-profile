@@ -7,13 +7,13 @@ export default function ProfileInformation() {
 
   return (
     <div ref={ref} className="grid-item center pr-sm">
-      <h3 className={`mb-xs capitalize ${inView ? "animate delayShort" : ""}`}>
+      <h3 className={`mb-xs capitalize ${inView ? "animate delayShortest" : ""}`}>
         {userName},
-        <span className={`age ${inView ? "animate delayLong" : ""}`}>
+        <span className={`age ${inView ? "animate delayShort" : ""}`}>
           {age}
         </span>
       </h3>
-      <p className={inView ? "animate delayShort" : ""}>{aboutMe}</p>
+      <p className={inView ? "animate delayLong" : ""}>{aboutMe}</p>
     </div>
   );
 }
