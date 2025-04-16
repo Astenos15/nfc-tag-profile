@@ -61,7 +61,7 @@ export const socials = [
     socialName: "website",
     href: "https://raffy-ramos-port.netlify.app",
     icon: <FaLink />,
-    color: "#339933",
+    color: "teal",
   },
 ];
 

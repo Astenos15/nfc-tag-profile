@@ -9,9 +9,7 @@ export default function Social({ link, index }) {
         target="__blank"
         style={{ color: link.color }}
       >
-        <span
-          className={inView ? "social-icon animate slowSpin delayLong " : ""}
-        >
+        <span className=" social-icon animate slowSpin delayLong">
           {link.icon}
         </span>
       </a>
@@ -29,3 +27,4 @@ export default function Social({ link, index }) {
     </li>
   );
 }
+// social-icon animate slowSpin delayLong

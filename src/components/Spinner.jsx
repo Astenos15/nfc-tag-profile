@@ -1,5 +1,5 @@
 function Spinner() {
-  return <div className="spinner delayLong">&nbsp;</div>;
+  return <div className="spinner ">&nbsp;</div>;
 }
 
 export default Spinner;
