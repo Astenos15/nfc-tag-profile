@@ -10,11 +10,7 @@ export default function Social({ link, index }) {
         style={{ color: link.color }}
       >
         <span
-          className={
-            index % 2 === 0 && inView
-              ? "social-icon animate delayLong"
-              : "social-icon animate delayShort"
-          }
+          className={inView ? "social-icon animate slowSpin delayLong " : ""}
         >
           {link.icon}
         </span>
