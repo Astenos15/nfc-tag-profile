@@ -1,5 +1,5 @@
 import { useInView } from "react-intersection-observer";
-import photo from "../assets/img/profile.png";
+import { photo } from "../data";
 
 export default function ProfilePicture() {
   const { ref, inView } = useInView();

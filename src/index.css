@@ -124,6 +124,7 @@ body {
 }
 
 /* Animations */
+
 @keyframes moveInBottom {
   0% {
     opacity: 0;
@@ -138,9 +139,19 @@ body {
     transform: translateY(0);
   }
 }
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-2rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 .animate {
-  animation: moveInBottom 1s !important;
+  animation: fadeIn 1s !important;
   animation-fill-mode: backwards !important;
 }
 

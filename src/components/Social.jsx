@@ -3,9 +3,8 @@ import { useInView } from "react-intersection-observer";
 export default function Social({ link, index }) {
   const { ref, inView } = useInView();
   return (
-    <li className="social-item">
+    <li ref={ref} className="social-item">
       <a
-        ref={ref}
         href={link.socialName === "email" ? `mailto:${link.href}` : link.href}
         target="__blank"
         style={{ color: link.color }}
@@ -20,7 +19,7 @@ export default function Social({ link, index }) {
           {link.icon}
         </span>
       </a>
-      <p ref={ref}>
+      <p>
         <span
           className={
             index % 2 === 0 && inView
