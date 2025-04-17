@@ -1,10 +1,9 @@
 // Dont touch code below
 import { nanoid } from "nanoid";
-import { FaFacebookSquare, FaInstagramSquare } from "react-icons/fa";
+import { FaFacebookSquare, FaInstagramSquare, FaDiscord } from "react-icons/fa";
 import { AiFillTikTok } from "react-icons/ai";
-import { FaViber } from "react-icons/fa6";
-import { TbBrandGmail } from "react-icons/tb";
 import { FaLink } from "react-icons/fa";
+import { SiGmail } from "react-icons/si";
 // Dont touch code above
 
 import picture from "./assets/img/profile.png"; // Only change  the file format "./assets/img/profile.{format}"
@@ -46,15 +45,15 @@ export const socials = [
     id: nanoid(),
     socialName: "email",
     href: "raffy.ramos.14.portfolio@gmail.com",
-    icon: <TbBrandGmail />,
+    icon: <SiGmail />,
     color: "#BB001B",
   },
   {
     id: nanoid(),
-    socialName: "viber",
-    href: "#",
-    icon: <FaViber />,
-    color: "	#7360f2",
+    socialName: "discord",
+    href: "https://discordapp.com/users/383866910153900032",
+    icon: <FaDiscord />,
+    color: "	#5865F2",
   },
   {
     id: nanoid(),
@@ -66,3 +65,5 @@ export const socials = [
 ];
 
 export const footerText = "Let's have a coffee";
+
+// https://discordapp.com/users/383866910153900032;
